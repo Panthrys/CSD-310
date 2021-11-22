@@ -14,5 +14,5 @@ newvalues = { "$set": { 'first_name': "Geralt of Rivia" } }
 
 db.students.update_one(filter, newvalues)
 
-
-
+remv = {'student_id': 1010}
+db.students.delete_one(remv)
